@@ -26,6 +26,7 @@ class MicropostsController extends Controller
         return view('welcome', $data);
     }
     
+    
     public function store(Request $request)
     {
         // バリデーション
@@ -41,6 +42,7 @@ class MicropostsController extends Controller
         // 前のURLへリダイレクトさせる
         return back();
     }
+    
     
     public function destroy($id)
     {
